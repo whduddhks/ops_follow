@@ -22,7 +22,7 @@ a {
 .top1{
     width: 100%;
     height: 85px;
-    border-bottom: solid 1px #c8c8c8;
+    border-bottom: solid 1px #f8f7f7;
     font-size: 28px;
 }
 .login ul{
@@ -36,6 +36,9 @@ a {
 .top1 a{
     color:#666;
     text-decoration-line: none;
+}
+.top1 a li {
+    padding: 18px 0;
 }
 .top2{
     width: 100%;
@@ -329,10 +332,12 @@ footer .footerIkon img{
     background-color: transparent;
 }
 .fix ul {
+    padding: 0;
     background-color: transparent;
 }
 .fix a {
     display: block;
+    margin-top: 10px;
     width: 90px;
     height: 90px;
     background-color: transparent;
@@ -419,8 +424,7 @@ footer .footerIkon img{
     $(document).ready(function(){
         $(document).snowfall({
             minSize: 5,
-            maxSize: 10,
-            flakeCount: 20
+            maxSize: 10
         });
         $('.fa-bars').on('click', function(){
             $('.menu_bg').show();
