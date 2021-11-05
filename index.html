@@ -21,43 +21,49 @@ a {
 }
 .top1{
     width: 100%;
-    height: 60px;
+    height: 85px;
     border-bottom: solid 1px #c8c8c8;
     font-size: 28px;
-    margin-top: 15px;
+}
+.login ul{
+    display: flex;
+    justify-content: space-around;
+    color:#666;
+    padding: 0;
+    height: 75px;
+    margin: 5px 0;
 }
 .top1 a{
     color:#666;
     text-decoration-line: none;
 }
-.login ul{
-display: flex;
-justify-content: space-around;
-color:#666;
-}
 .top2{
     width: 100%;
-    height: 100px;
+    height: 150px;
     border-bottom: solid 1px #c8c8c8;
     display: flex;
     text-align: center;
     position: relative;
-    vertical-align: center;
-    margin-top: 40px;
 }
-.top2 img{
-    height: 75px;
+.top2 #ikon{
+    width: 180px;
+    height: 120px;
+    text-align: left;
+    position:absolute;
+    top: 15px;
+}
+.top2 a {
+    background-color: transparent;
 }
 .top2 i{
     color:#999;
-    padding-left: 20px;
-    font-size: 60px;
+    font-size: 80px;
+    margin: 20px 0;
+    padding-left: 10px;
 }
-.top2 #ikon{
-    width: 160px;
-    height: 90px;
-    text-align: left;
-    position:absolute;
+.top2 img{
+    height: 100px;
+    margin: 25px 0;
 }
 .menu_bg{
     width: 100%;
@@ -80,16 +86,22 @@ color:#666;
     overflow-y: scroll;
 }
 .top3{
-    padding: 28px 0px;
     width: 100%;
-    height: 28px;
+    height: 100px;
     border-bottom: 1px solid #c8c8c8;
+}
+.menu {
+    white-space:nowrap;
+    overflow-x: scroll;
+    padding: 25px 0;
+}
+.menu::-webkit-scrollbar {
+    display: none;
 }
 .menu > li{
     display: inline;
     padding: 0px 42px;
-    font-size: 22px;
-    padding-left: 0px;
+    font-size: 35px;
 }
 .menu li a{
     color:#000;
@@ -101,6 +113,9 @@ color:#666;
 }
 .bx-wrapper{
     border: none !important;
+}
+.text1 {
+    margin-top: 130px;
 }
 .text1 h4{
     text-align: center;
@@ -442,8 +457,8 @@ footer .footerIkon img{
             <li><a href="https://m.ops.co.kr/product/list.html?cate_no=45">케이크</a></li>
             <li><a href="https://m.ops.co.kr/product/list.html?cate_no=123">단체주문</a></li>
             <li><a href="https://m.ops.co.kr/board/gallery/list.html?board_no=8">이벤트</a></li>                  
-            <!-- <li><a href="#">매거진</a></li>
-            <li><a href="#">쟈흐당 옵스</a></li> -->
+            <li><a href="#">매거진</a></li>
+            <li><a href="#">쟈흐당 옵스</a></li>
         </ul>
         </div>
     <div class="main">
