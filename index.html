@@ -84,9 +84,116 @@ a {
     position: absolute;
     top: 0;
     left:-85%;
-    background-color: white;
+    background-color: #f0f0f0;
     z-index: 1;
     overflow-y: scroll;
+}
+.side_logo{
+    width: 100%;
+    height: 85px;
+    margin:0px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+.side_logo img {
+    background-color: #fff;
+}
+.login_btn{
+    text-align: left;
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #f0f0f0;
+}
+.login_btn button{
+    width: 320px;
+    padding: 12px 60px;
+    font-size: 28px;
+    font-weight: bold;
+    color:#fff;
+    background-color: #555;
+}
+.sidebar_menu .side_login{
+    width: 80%;
+    font-size: 27px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 120px;
+}
+.side_login {
+    background-color: #f0f0f0;
+}
+.side_login li{
+    display: inline;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    color: black;
+}
+.sidebar_menu .close_btn{
+    display: inline-block;
+}
+.sidebar_menu .close_btn i{
+    position: absolute;
+    right: 38px;
+    top: 22px;
+    font-size: 80px;
+    color: #999;
+    background-color: #fff;
+}
+.side_ikon{
+    width: 75%;
+    font-size: 70px;
+    color: #999;
+    text-align: center;
+    margin: 18px 0px;
+    margin-left: 90px;
+    background-color: #fff;
+}
+.side_ikon i{
+    padding: 18px 48px;
+    background-color: #fff;
+}
+.menu_side{
+    width: 100%;
+    height: 50px;
+    background-color: #f0f0f0;
+    padding-top: 45px;
+    text-align: center;
+}
+.menu_side p{
+    display: inline-block;    
+    font-size: 23px;
+    color:#000;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+.menu_side a {
+    background-color: #f0f0f0;
+}
+.menu_side i{
+    font-size: 25px;
+    color:#000;
+    padding-left: 20px;
+    background-color: #f0f0f0;
+}
+.fa-chevron-up {
+    display: none;
+}
+.menu_inside {
+    display: none;
+}
+.menu_inside ul{
+    width: 100%;
+    padding:0px;
+    background-color: #f0f0f0;
+}
+.menu_inside ul li{
+    font-size: 23px;
+    color:#000;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: #f0f0f0;
 }
 .top3{
     width: 100%;
@@ -414,17 +521,98 @@ footer .footerIkon img{
 </header>
 <div class="menu_bg"></div>
 <div class="sidebar_menu">
-    <div class="close_btn">
+    <div class="side_logo">
+        <img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2020/03/26/8738485fc73259338d872479accd5412.png">
+    </div>
+    <div class="close_btn"> 
         <a href="#">
             <i class="fas fa-times fa-9x"></i>
         </a>
+    </div>
+    <div class="login_btn">
+        <button>로그인</button>
+        <button>회원가입</button>
+    </div>
+    <div class="side_ikon">
+        <a><i class="fas fa-heart"></i></a>
+        <a><i class="fas fa-scroll"></i></a>
+        <a><i class="fas fa-shipping-fast"></i></a>
+    </div>
+    <ul class="side_login">
+        <li>위시리스트&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+        <li>최근 본 상품&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+        <li>주문/배송조회&nbsp;</li>
+    </ul>
+    <div class="menu_side">
+        <a href="#">
+            <p>젤리 & 쥬스</p>
+        </a>
+        <a href="#">
+            <i class="fas fa-chevron-down drink"></i>
+            <i class="fas fa-chevron-up drink_up"></i>
+        </a>
+    </div>
+    <div class="menu_inside drink_inside">
+        <ul>
+            <li>젤리</li>
+            <li>쥬스</li>
+        </ul>
+    </div>
+    <div class="menu_side">
+        <a href="#">
+            <p>빵</p>
+        </a>
+        <a href="#">
+            <i class="fas fa-chevron-down bread"></i>
+            <i class="fas fa-chevron-up bread_up"></i>
+        </a>
+    </div>
+    <div class="menu_inside bread_inside">
+        <ul>
+            <li>구운과자</li>
+            <li>만주</li>
+            <li>바게트</li>
+            <li>식빵</li>
+            <li>쟈흐당 옵스</li>
+        </ul>
+    </div>
+    <div class="menu_side">
+        <a href="#">
+            <p>쿠키</p>
+        </a>
+        <a href="#">
+            <i class="fas fa-chevron-down cookie"></i>
+            <i class="fas fa-chevron-up cookie_up"></i>
+        </a>
+    </div>
+    <div class="menu_inside cookie_inside">
+        <ul>
+            <li>단품쿠키</li>
+            <li>쿠키 선물세트</li>
+        </ul>
+    </div>
+    <div class="menu_side">
+        <a href="#">
+            <p>초콜렛</p>
+        </a>
+        <a href="#">
+            <i class="fas fa-chevron-down cho"></i>
+            <i class="fas fa-chevron-up cho_up"></i>
+        </a>
+    </div>
+    <div class="menu_inside cho_inside">
+        <ul>
+            <li>간식용</li>
+            <li>선물용</li>
+        </ul>
     </div>
 </div>
 <script>
     $(document).ready(function(){
         $(document).snowfall({
             minSize: 5,
-            maxSize: 10
+            maxSize: 10,
+            flakes: 20
         });
         $('.fa-bars').on('click', function(){
             $('.menu_bg').show();
@@ -449,7 +637,48 @@ footer .footerIkon img{
             autoHover: false,
             controls: false
         });
-    })
+        $('.drink').on('click', function(){
+            $('.drink_inside').show();
+            $('.drink').hide();
+            $('.drink_up').show();
+        });
+        $('.drink_up').on('click', function(){
+            $('.drink_inside').hide();
+            $('.drink_up').hide();
+            $('.drink').show();
+        });
+        $('.bread').on('click', function(){
+            $('.bread_inside').show();
+            $('.bread').hide();
+            $('.bread_up').show();
+        });
+        $('.bread_up').on('click', function(){
+            $('.bread_inside').hide();
+            $('.bread_up').hide();
+            $('.bread').show();
+        });        
+        $('.cookie').on('click', function(){
+            $('.cookie_inside').show();
+            $('.cookie').hide();
+            $('.cookie_up').show();
+        });
+        $('.cookie_up').on('click', function(){
+            $('.cookie_inside').hide();
+            $('.cookie_up').hide();
+            $('.cookie').show();
+        });        
+        $('.cho').on('click', function(){
+            $('.cho_inside').show();
+            $('.cho').hide();
+            $('.cho_up').show();
+        });
+        $('.cho_up').on('click', function(){
+            $('.cho_inside').hide();
+            $('.cho_up').hide();
+            $('.cho').show();
+        });
+        
+    });
 </script>
     <div class="top3">
         <ul class="menu">
