@@ -9,65 +9,86 @@
 *{
     list-style: none;
     margin:0px auto;
+    color: white;
+    background-color: black;
 }
+a {
+    color: white !important;
+}
+
 .top0 img{
     width: 100%;
 }
 .top1{
     width: 100%;
-    height: 70px;
+    height: 60px;
     border-bottom: solid 1px #c8c8c8;
-    font-size: 11px;
+    font-size: 28px;
+    margin-top: 15px;
 }
 .top1 a{
     color:#666;
     text-decoration-line: none;
 }
-.login{
-    margin: 10px auto;
-}
 .login ul{
 display: flex;
 justify-content: space-around;
 color:#666;
-font-weight: lighter;
 }
 .top2{
     width: 100%;
-    height: 60px;
+    height: 100px;
     border-bottom: solid 1px #c8c8c8;
     display: flex;
     text-align: center;
     position: relative;
     vertical-align: center;
+    margin-top: 40px;
 }
 .top2 img{
-    margin-top: 15px;
-    width: 80px;
-    height: 30px;
+    height: 75px;
 }
 .top2 i{
     color:#999;
-    margin-top: 19px;
-    padding-left: 12px;
-    font-size: 25px;
+    padding-left: 20px;
+    font-size: 60px;
 }
 .top2 #ikon{
-    width: 100px;
-    height: 40px;
+    width: 160px;
+    height: 90px;
     text-align: left;
     position:absolute;
 }
-.top3{
-    padding: 5px 0px;
+.menu_bg{
     width: 100%;
-    height: 26px;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: none;
+    z-index: 1;
+}
+.sidebar_menu{
+    display: none;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:-85%;
+    background-color: white;
+    z-index: 1;
+    overflow-y: scroll;
+}
+.top3{
+    padding: 28px 0px;
+    width: 100%;
+    height: 28px;
     border-bottom: 1px solid #c8c8c8;
 }
 .menu > li{
     display: inline;
-    padding: 0px 15px;
-    font-size: 12px;
+    padding: 0px 42px;
+    font-size: 22px;
     padding-left: 0px;
 }
 .menu li a{
@@ -78,104 +99,278 @@ font-weight: lighter;
     width: 100%;
     height: 100%;
 }
+.bx-wrapper{
+    border: none !important;
+}
 .text1 h4{
     text-align: center;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 25px;
     color:#999;
-    margin-top: 45px;
+    margin-top: 50px;
 }
 .text1 h2{
     text-align: center;
-    font-size: 17px;
-    margin-bottom: 37px;
+    font-size: 30px;
+    margin-bottom: 50px;
 }
-.imaset1 {
-    margin: 0 auto;
+.imgset1{
+    width: 100%;
 }
-.imgset1 img{
+.imgset1 div{
     display: inline-block;
-    width: 30%
-}
-.price1 ul{
-    width: 88%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0px;
-    margin-left: 80px;
-}
-.price1 ul li{
-    display: block;
-    margin: 5px 0px;
     text-align: center;
-    font-size: 13px;
-    padding: 15px;
+    padding-left: 2.3%;
 }
-.price1 span{
-    width: 290px;
-    font-weight: bold;
+.imgset1 p{
+    padding: 18px 0px;
+    font-size: 24px;
 }
-
 .text2 h4{
     text-align: center;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 25px;
     color:#999;
-    margin-top: 45px;
+    margin-top: 63px;
 }
 .text2 h2{
     text-align: center;
-    font-size: 17px;
-    margin-bottom: 37px;
+    font-size: 30px;
+    margin-bottom: 68px;
 }
-.imgset2{
-    margin-left: 22px;
+.imgset2 {
+    width: 100%;
 }
-.price2 ul{
-    width: 88%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0px;
-    margin:0 auto;
-}
-.price2 ul li{
-    width: 20%;
-    text-align: center;
-    font-size: 13px;
-    margin: 5px 0px;
-}
-.price2 b{
-    border-bottom: 1px solid #999;
+.imgset2 div{
     display: inline-block;
-    padding-bottom:10px;
+    text-align: center;
+    padding-left: 2.3%;
 }
-.price2 span{
+.imgset2 p{
+    padding: 18px 0px;
+    font-size: 24px;
+}
+.imgset2 div span{
     display: block;
     color:#7d6e46;
     margin-top:8px;
 }
-.img img{
+.footer_img img{
     width: 100%;
 }
 .btn{
-    height: 80px;
+    height: 160px;
     text-align: center;
     vertical-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .btn button{
-    width: 110px;
-    height: 32px;
-    background-color: #fff;
-    border: 1px solid #999;
-    font-size: 10px;
+    width: 320px;
+    height: 72px;
+    border: 1px solid white;
+    font-size: 26px;
 }
-
-
-
-</style>
-
+footer .footerIkon{
+    width: 100%;
+    padding:28px 0px;
+    text-align: center;
+}
+footer .footerIkon img{
+    height: 56px;
+    padding-left: 17px;
+}
+.twobox{
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    font-size: 26px;
+}
+.twobox div{
+    width: 50%;
+    border: 1px solid #999;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+.twobox div span{
+    font-weight: bold;
+    font-size: 26px;
+}
+.twobox button{
+    width: 70%;
+    height: 48px;
+    border: 1px solid white;
+    font-size: 20px;
+    margin:20px;
+    text-align: left;
+    padding:5px;
+}
+.foot1{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+.foot1 p{
+    display: block;
+    margin-top: 40px;
+    font-size: 24px;
+}
+.foot1 img{
+    width: 28px;
+    height: 5px;
+    padding: 15px;
+}
+.foot2{
+    width: 100%;
+    height: 480px;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+.foot2 p{
+    display: block;
+    margin-top: 40px;
+    font-size: 24px;
+}
+.foot2 img{
+    width: 28px;
+    height: 5px;
+    padding: 15px;
+}
+.footermenu{
+    width: 100%;
+    height: 58px;
+    border-bottom: solid 1px #c8c8c8;
+    font-size: 25px;
+    margin-top: 17px;
+}
+.footermenu a{
+    color:#666;
+    text-decoration-line: none;
+}
+.footermenu li{
+    width: 23%;
+    font-size: 22px;
+    display: inline-block;
+    border-right: 1px #999 solid;
+    text-align: center;
+}
+.footermenu .unborder{
+    border: 0px;
+}
+.footermenu2{
+    width: 100%;
+    height: 58px;
+    border-bottom: solid 1px #c8c8c8;
+    font-size: 25px;
+    margin-top: 17px;
+}
+.footermenu2 a{
+    color:#666;
+    text-decoration-line: none;
+}
+.footermenu2 li{
+    width: 23%;
+    font-size: 22px;
+    display: inline-block;
+    border-right: 1px #999 solid;
+    text-align: center;
+}
+.footermenu2 .unborder{
+    border: 0px;
+}
+.footermenu3{
+    width: 100%;
+    height: 52px;
+    border-bottom: solid 1px #fff;
+    padding-top: 24px;
+    text-align: center;
+    margin-top: 24px;
+}
+.footermenu3 a{
+    color:#fff;
+    text-decoration-line: none;
+}
+.footermenu3 li{
+    font-size: 20px;
+    display: inline-block;
+    padding: 0px 40px;
+    border-right: 1px #fff solid;
+}
+.footermenu3 .unborder{
+    border: 0px;
+}
+.topbtn ul{
+    display: block;
+    position: relative;
+    right: 300px;
+    bottom: 50px;
+}
+.fix{
+    position: fixed;
+    right: 5%;
+    bottom: 15%;
+    margin: 0px;
+    display:scroll;
+    background-color: transparent;
+}
+.fix ul {
+    background-color: transparent;
+}
+.fix a {
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+}
+.fix ul li {
+    background-color: transparent;
+}
+.fix ul li img{
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+}
+.footend1{
+    text-align: center;
+    width: 100%;
+    height: 220px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding-top: 40px;
+}
+.footend1 p{
+    font-size: 22px;
+    color: #999;
+}
+.footend1 span{
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+    padding-top: 13px;
+    height: 16px;
+}
+.footend2 p{
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+    padding-top: 13px;
+    height: 16px;
+}
+.hidden {
+    height:100%; 
+    min-height:100%; 
+    overflow:hidden 
+    !important; 
+    touch-action:none;
+}
+</style> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="./js/snowfall.jquery.js"></script>
 <body>
+<header id="header">
     <div class="top0">
         <img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2021/10/27/1e6ab98d9ef1bfa283d8d0535e108083.jpg">
     </div>
@@ -188,51 +383,105 @@ font-weight: lighter;
                 <a href="https://m.ops.co.kr/product/list.html?cate_no=55"><li>개인결제</li></a>
             </ul>
         </div>
-    
     </div>
     <div class="top2">
         <div id="ikon">
             <a href="#"><i class="fas fa-bars"></i></a>
             <a href="#"><i class="fas fa-search"></i></a>
         </div>
-        <img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2020/04/06/80c90e57b22642a35b63c526a665eff5.png">
+        <a href="file:///C:/Users/RYU/Desktop/mops/ops%20m.html"><img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2020/04/06/80c90e57b22642a35b63c526a665eff5.png"></a>
     </div>
+</header>
+<div class="menu_bg"></div>
+<div class="sidebar_menu">
+    <div class="close_btn">
+        <a href="#">
+            <i class="fas fa-times fa-9x"></i>
+        </a>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $(document).snowfall({
+            minSize: 5,
+            maxSize: 10,
+            flakeCount: 20
+        });
+        $('.fa-bars').on('click', function(){
+            $('.menu_bg').show();
+            $('.sidebar_menu').show().animate({
+                left:0
+            });
+            $('body').addClass('hidden');
+        });
+        $('.close_btn>a').on('click', function(){
+            $('.menu_bg').hide(); 
+            $('.sidebar_menu').animate({
+                left: '-' + 85 + '%'
+                       },function(){
+                $('.sidebar_menu').hide(); 
+            }); 
+            $('body').removeClass('hidden');
+        });
+        $('.main').bxSlider({
+            auto: true,
+            pause: 5000,
+            pager: true,
+            autoHover: false,
+            controls: false
+        });
+    })
+</script>
     <div class="top3">
         <ul class="menu">
-            <li><a href="#">젤리&쥬스</a></li> 
-            <li><a href="#">빵</a></li>
-            <li><a href="#">쿠키</a></li>
-            <li><a href="#">초콜렛</a></li>
-            <li><a href="#">선물세트</a></li>
-            <li><a href="#">케이크</a></li>
-            <li><a href="#">단체주문</a></li>
-            <li><a href="#">이벤트</a></li>                  
-            <li><a href="#">매거진</a></li>
-            <li><a href="#">쟈흐당 옵스</a></li>
+            <li><a href="https://m.ops.co.kr/product/list.html?cate_no=24">젤리&쥬스</a></li> 
+            <li><a href="https://m.ops.co.kr/product/list.html?cate_no=26">빵</a></li>
+            <li><a href="https://m.ops.co.kr/product/list.html?cate_no=27">쿠키</a></li>
+            <li><a href="https://m.ops.co.kr/product/list.html?cate_no=42">초콜렛</a></li>
+            <li><a href="https://m.ops.co.kr/product/list.html?cate_no=44">선물세트</a></li>
+            <li><a href="https://m.ops.co.kr/product/list.html?cate_no=45">케이크</a></li>
+            <li><a href="https://m.ops.co.kr/product/list.html?cate_no=123">단체주문</a></li>
+            <li><a href="https://m.ops.co.kr/board/gallery/list.html?board_no=8">이벤트</a></li>                  
+            <!-- <li><a href="#">매거진</a></li>
+            <li><a href="#">쟈흐당 옵스</a></li> -->
         </ul>
         </div>
     <div class="main">
         <img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2021/10/25/168def2ff96296a3c16de8cf29f1f7e2.jpg">
+        <img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2021/11/01/9fad8af613153c070b9ff2e47fb848fd.jpg">
+        <img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2021/11/03/0a29a990f5178faa65505617dd66728f.jpg">
+        <img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2021/11/04/8a2fc634f815cda706519df8cd8a0471.jpg">
+        <img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2021/11/04/aa6f03ab3a9756c1039e8ea100492114.jpg">
     </div>
     <div class="text1">
         <h4>소중한 분들에게 전하는</h4>
         <h2>추천 선물세트</h2>
     </div>
     <div class="imgset1">
-        <img src="https://m.ops.co.kr/web/product/medium/202109/02b6c9785807be0b728a76565a8773e4.jpg">
-        <img src="https://m.ops.co.kr/web/product/medium/202105/eef88873f40b6163a9696b6ada53a156.jpg">
-        <img src="https://m.ops.co.kr/web/product/medium/202105/f0193e4213a9c3ca803fb28dc44c352a.jpg">
-        <img src="https://m.ops.co.kr/web/product/medium/201805/14_shop1_15271390438284.jpg">
-        <img src="https://m.ops.co.kr/web/product/medium/202110/357c7b36b8f2f74295dbc9b5efe025f9.jpg">
-    </div>
-    <div class="price1">
-        <ul>
-            <li><span>복수초 세트(12EA)</span><br><br>18,000원</li>
-            <li><span>쿠키세트 S</span><br><br>23,000원</li>
-            <li><span>밤만주 세트</span><br><br>15,000원</li>
-            <li><span>가또 무쓸린</span><br><br>16,000원</li>
-            <li><span>쿠키세트 S</span><br><br>15,000원</li>
-        </ul>
+        <div>
+            <a href="https://m.ops.co.kr/product/%EB%B3%B5%EC%88%98%EC%B4%88-%EC%84%B8%ED%8A%B812ea/228/category/1/display/2/"><img src="https://m.ops.co.kr/web/product/medium/202109/02b6c9785807be0b728a76565a8773e4.jpg"></a>
+            <p>복수초 세트(12EA)<br>18,000원</p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/202105/eef88873f40b6163a9696b6ada53a156.jpg">
+            <p>쿠키세트 S<br>23,000원</p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/202105/f0193e4213a9c3ca803fb28dc44c352a.jpg">
+            <p>밤만주 세트<br>15,000원</p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/201805/14_shop1_15271390438284.jpg">
+            <p>가또 무쓸린<br>16,000원</p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/202110/357c7b36b8f2f74295dbc9b5efe025f9.jpg">
+            <p>쿠키세트 S<br>15,000원</p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/201806/95_shop1_15295716198794.jpg">
+            <p>그리오틴 케익(6EA)<br>11,800원</p>
+        </div>
     </div>
 
     <div class="text2">
@@ -240,26 +489,109 @@ font-weight: lighter;
         <h2>간편한 간식 선물세트</h2>
     </div>
     <div class="imgset2">
-        <img src="https://m.ops.co.kr/web/product/medium/201805/72_shop1_15271452142435.jpg">
-        <img src="https://m.ops.co.kr/web/product/medium/202105/fe436115e50ef62fe719588f15d1cfdf.jpg">
-        <img src="https://m.ops.co.kr/web/product/medium/201805/65_shop1_15271423851648.jpg">
-        <img src="https://m.ops.co.kr/web/product/medium/201805/18_shop1_15271390853979.jpg">
-        <img src="	https://m.ops.co.kr/web/product/medium/201805/75_shop1_15271458922437.jpg">
-    </div>
-    <div class="price2">
-        <ul>
-            <li><b>브라우니(8EA)</b><br>13,600원<br><span>REVIEWS</span></li>
-            <li><b>학원전 박스세트 부산(10EA)</b><br>15,000원<br><span>REVIEWS</span></li>
-            <li><b>쥬드레장(10EA)</b><br>15,000원<br><span>REVIEWS</span></li>
-            <li><b>딸기잼 롤케익</b><br>7,000원<br><span>REVIEWS</span></li>
-            <li><b>다쿠와즈(6EA)</b><br>11,400원<br><span>REVIEWS</span></li>
-        </ul>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/201805/72_shop1_15271452142435.jpg">
+            <p>브라우니(8EA)<br>13,600원<br><span>REVIEWS</span></p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/202105/fe436115e50ef62fe719588f15d1cfdf.jpg">
+            <p>학원전 박스세트 부산(10EA)</b><br>15,000원<br><span>REVIEWS</span></p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/201805/65_shop1_15271423851648.jpg">
+            <p>쥬드레장(10EA)<br>15,000원<br><span>REVIEWS</span></p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/201805/18_shop1_15271390853979.jpg">
+            <p>딸기잼 롤케익<br>7,000원<br><span>REVIEWS</span></p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/201805/75_shop1_15271458922437.jpg">
+            <p>다쿠와즈(6EA)<br>11,400원<br><span>REVIEWS</span></p>
+        </div>
+        <div>
+            <img src="https://m.ops.co.kr/web/product/medium/20200515/05738e32546010a00cc29e452f406513.jpg">
+            <p>빨미에(10EA)<br>7,000원<br><span>REVIEWS</span></p>
+        </div>
     </div>
     <div class="btn">
         <button>M O R E</button>
     </div>
-    <div class="img">
+    <div class="footer_img">
         <img src="https://app-storage-edge-005.cafe24.com/bannermanage2/ops007/2020/04/07/3ba96789bbfb0994eb7b63483101230c.jpg">
     </div>
+    <footer id="footer">
+        <div class="footerIkon">
+            <img src="https://m.ops.co.kr/G_design/mobile/sns_facebook.png">
+            <img src="https://m.ops.co.kr/G_design/mobile/sns_instagram.png">
+            <img src="https://m.ops.co.kr/G_design/mobile/sns_tweeter.png">
+        </div>
+        <div class="twobox">
+            <div>
+                <p>C S CENTER<br><br><span>1588-3069</span><br><br>AM 09:30 - PM 06:00<br>LUNCH 12:00 - 13:00<br>주말|공휴일 휴무</p>
+                <button>CONECTION NOW</button>
+            </div>
+            <div>
+                <p>BANK INFO<br><br>국민 : 768701-01-365535<br>부산 : 101-2015-6045-02<br>농협 : 317-0013-4468-91<br>
+                    기업 : 288-089664-04-031<br>
+                    (주)옵스 (김상용)</p>
+                    <button>Q & A BOARD</button>
+            </div>
+        </div>
+        <div class="foot1">
+            <p>SHOPPING INFO<br><img src="https://m.ops.co.kr/G_design/mobile/deco.gif"><br>네이버 톡톡과 카카오 플러스를 통해<br>빠르고 간편하게 언제든 실시간 상담이 가능합니다.</p>
+        </div>
+        <div class="foot2">
+            <p>RETURN ADDRESS<br><img src="https://m.ops.co.kr/G_design/mobile/deco.gif"><br>반품 주소 : 부산시 남구 신선로 201 포장실<br>고객센터 (1588-3069)<br>
+            <br><br>-상품의 특성상 반품은 불가합니다.<br>-단, 제품의 하자나 당사의 착오가 있을 시,<br>상품을 받은 날부터
+            2일 이내에 옵스 고객센터(1588-3069)로 전화주시면,<br>교환/반품 가능합니다.<br><br>※상품에 문제가 있는 것으로 확인되면
+            배송비는 옵스가 부담합니다
+    </p>
+        </div>
+        <div class="footermenu">
+            <ul>
+                <a href="#"><li>장바구니</li></a>
+                <a href="#"><li>주문조회</li></a>
+                <a href="#"><li>관심상품</li></a>
+                <a href="#"><li class="unborder">최근본상품</li></a>
+            </ul>
+        </div>
+        <div class="footermenu2">
+            <ul>
+                <a href="#"><li>공지사항</li></a>
+                <a href="#"><li>고객센터</li></a>
+                <a href="#"><li>이용후기</li></a>
+                <a href="#"><li class="unborder">PC 모드</li></a>
+            </ul>
+        </div>
+        <div class="fix">
+            <ul>
+                <a target="_blank" href="https://pf.kakao.com/_tLcqE"><li><img src="https://m.ops.co.kr/G_design/mobile/quick_kakaoch.png"></li></a>
+                <a target="_blank" href="https://nid.naver.com/nidlogin.login?svctype=64&url=https%3A%2F%2Ftalk.naver.com%2Fct%2Fwc2vf0"><li><img src="https://m.ops.co.kr/G_design/mobile/quick_talk.png"></li></a>
+                <a target="_blank" href="https://accounts.kakao.com/login?continue=http%3A%2F%2Fpf.kakao.com%2F_tLcqE%2Fchat"><li><img src="https://m.ops.co.kr/G_design/mobile/quick_kakao.png"></li></a>
+                <a href="#header"><li><img src="https://m.ops.co.kr/G_design/mobile/btn_top.png"></li></a>
+                <a href="#footer"><li><img src="https://m.ops.co.kr/G_design/mobile/btn_down.png"></li></a>
+            </ul>
+        </div>
+        <div class="footend1">
+            <p>상호 (주)옵스 고객센터 1588-3069</p>
+                <p>주소 부산광역시 남구 신선로 201 (감만동) 1동</p>
+                <p>사업자등록번호 617-81-25278</p>
+                <p>통신판매업신고 제 2014-부산남구-6 호</p>
+                <p>대표 김상용 개인정보보호 책임자 박용삼</p>
+                <p><span>Hosting by CAFE24</span></p>
+        </div>
+        <div class="footend2">
+            <p><span>Copyright© 2019 OPS 옵스. All Rights Reserved.</span></p>
+        </div>
+        <div class="footermenu3">
+            <ul>
+                <a href="#"><li>회사소개</li></a>
+                <a href="#"><li>이용약관</li></a>
+                <a href="#"><li>개인정보취급방침</li></a>
+                <a href="#"><li class="unborder">이용안내</li></a>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
