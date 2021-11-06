@@ -89,7 +89,7 @@ a {
     top: 0;
     left:-85%;
     background-color: #f0f0f0;
-    z-index: 1;
+    z-index: 5;
     overflow-y: scroll;
 }
 .side_logo{
@@ -614,6 +614,70 @@ footer .footerIkon img{
             <li>선물용</li>
         </ul>
     </div>
+    <div class="menu_side">
+        <a href="#">
+            <p>선물세트</p>
+        </a>
+        <a href="#">
+            <i class="fas fa-chevron-down gift"></i>
+            <i class="fas fa-chevron-up gift_up"></i>
+        </a>
+    </div>
+    <div class="menu_inside gift_inside">
+        <ul>
+            <li>답례품</li>
+            <li>선물(소)</li>
+            <li>선물(대)</li>
+        </ul>
+    </div>
+    <div class="menu_side">
+        <a href="#">
+            <p>케이크</p>
+        </a>
+        <a href="#">
+            <i class="fas fa-chevron-down cake"></i>
+            <i class="fas fa-chevron-up cake_up"></i>
+        </a>
+    </div>
+    <div class="menu_inside cake_inside">
+        <ul>
+            <li>시즌 한정</li>
+            <li>올시즌 케이크</li>
+            <li>데코픽</li>
+        </ul>
+    </div>
+    <div class="menu_side">
+        <a href="#">
+            <p>단체주문</p>
+        </a>
+        <a href="#">
+            <i class="fas fa-chevron-down order"></i>
+            <i class="fas fa-chevron-up order_up"></i>
+        </a>
+    </div>
+    <div class="menu_inside order_inside">
+        <ul>
+            <li>메세지카드</li>
+            <li>쿠키세트</li>
+            <li>구운과자</li>
+            <li>롤케익</li>
+            <li>파운드케익</li>
+        </ul>
+    </div>
+    <div class="menu_side">
+        <a href="#">
+            <p>쟈흐당 옵스</p>
+        </a>
+        <a href="#">
+            <i class="fas fa-chevron-down ops"></i>
+            <i class="fas fa-chevron-up ops_up"></i>
+        </a>
+    </div>
+    <div class="menu_inside ops_inside">
+        <ul>
+            <li>둘러보기</li>
+        </ul>
+    </div>
 </div>
 <script>
     $(document).ready(function(){
@@ -686,7 +750,46 @@ footer .footerIkon img{
             $('.cho_up').hide();
             $('.cho').show();
         });
-        
+        $('.gift').on('click', function(){
+            $('.gift_inside').show();
+            $('.gift').hide();
+            $('.gift_up').show();
+        });
+        $('.gift_up').on('click', function(){
+            $('.gift_inside').hide();
+            $('.gift_up').hide();
+            $('.gift').show();
+        });
+        $('.cake').on('click', function(){
+            $('.cake_inside').show();
+            $('.cake').hide();
+            $('.cake_up').show();
+        });
+        $('.cake_up').on('click', function(){
+            $('.cake_inside').hide();
+            $('.cake_up').hide();
+            $('.cake').show();
+        });
+        $('.order').on('click', function(){
+            $('.order_inside').show();
+            $('.order').hide();
+            $('.order_up').show();
+        });
+        $('.order_up').on('click', function(){
+            $('.order_inside').hide();
+            $('.order_up').hide();
+            $('.order').show();
+        });
+        $('.ops').on('click', function(){
+            $('.ops_inside').show();
+            $('.ops').hide();
+            $('.ops_up').show();
+        });
+        $('.ops_up').on('click', function(){
+            $('.ops_inside').hide();
+            $('.ops_up').hide();
+            $('.ops').show();
+        });
     });
 </script>
     <div class="top3">
